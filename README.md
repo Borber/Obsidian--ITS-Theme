@@ -156,10 +156,11 @@ Class | Description |
 `aside-show` | Aside content will be shown in the margin of the page.
 `aside-hide` | Aside content will be hidden and only display an icon 🗨.<br>To see comment, hover over the icon
 `aside-in` | Aside content will be embedded inside the page.
+`aside-clean` | Aside content that doesn't have the stylized box.
 
 **Examples:**
 Aside code is highlighted.
-![](https://i.imgur.com/vOetMco.png)
+![](Images/Aside-Snippet.png)
 
 
 # Image Positions
@@ -170,6 +171,14 @@ Obsidian internal images `![[]]` will change immediately, but for external image
 Example | Description |
 ---|---|
 `![[image.png\|clear]]`| `clear` will allow that image to sit below another image<br>If it's on the same side instead of sitting in the middle of the page.
+
+### Image Grid
+
+Example | Description |
+---|---|
+`![[image.png\|grid]]` | `grid` will allow that image and others with this to display side-by-side in a grid
+
+![](Images/Image_Adjustments-Image-Grids.png)
 
 ### Cover (Mostly for Customizable Version)
 
@@ -290,14 +299,16 @@ Example | Description |
 
 # Embed Adjustments
 
-> **Embed Adjustments use the same [parameters](#sizing) as the images for resizing it and [moving it](#left-right-center) (except for `c`).**
+> **Embed Adjustments use the same [parameters](#sizing) as the images for resizing it and [moving it](#left-right-center).**
 
 Example | Description
 ---|---|
-`![[Embed Page\|no-lk]]` | Hide the link
+`![[Embed Page\|nlk]]` | Hide the link until hovered over embed
 `![[Embed Page\|lk-l]]` | Move link to the left
 `![[Embed Page\|lk-clear]]` | Make background of the link transparent
-`![[Embed Page\|no-m]]` | Will remove margins and padding
+`![[Embed Page\|nmg]]` | Will remove margins and padding
+`![[Embed Page\|full]]` | Display the full embed
+`![[Embed Page\|clean]]` | Removes borders/etc to hide embed design 
 
 ## Heading & Titles
 
